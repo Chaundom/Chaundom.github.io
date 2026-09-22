@@ -12,10 +12,15 @@
       align-items: center;
       min-height: 100vh;
       background-color: #f7f9fa;
+      padding: 16px;          /* เผื่อขอบไว้เล็กน้อย ไม่ให้รูปชิดขอบจอ */
+      box-sizing: border-box;
     }
     img {
-      max-width: 75%;
+      max-width: 85vw;        /* กว้างไม่เกิน 85% ของหน้าจอ */
+      max-height: 85vh;       /* สูงไม่เกิน 85% ของหน้าจอ (จะไม่ล้นแนวตั้งแน่นอน) */
+      width: auto;
       height: auto;
+      object-fit: contain;    /* รักษาสัดส่วนรูปภาพเดิมไว้ */
       display: block;
     }
   </style>
